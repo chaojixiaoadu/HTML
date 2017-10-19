@@ -88,20 +88,69 @@
 
     ```
     <ion-list no-lines>
+    <ion-list-header>
+      热门职位
+    </ion-list-header>
     <ion-item *ngFor="let item of items" (click)="itemSelected(item)">
       <ion-avatar item-start>
         <img src="{{item?.icon_url}}">
       </ion-avatar>
-      <h2>{{item?.post}}</h2>
-      <h3>{{item?.salary}}</h3>
-      <ion-grid>
-        <ion-row>
-          <ion-col col-4>苏州</ion-col>
-          <ion-col col-4>猎聘</ion-col>
-          <ion-col col-4 style="text-align: right" >...</ion-col>
-        </ion-row>
-      </ion-grid>
+      <div item-start>
+        <ion-label>{{item?.post}}</ion-label>
+        <ion-note>{{item?.salary}}</ion-note>
+      </div>
+
+      <ion-note item-end>{{item?.address}}</ion-note>
+
     </ion-item>
-  </ion-list>
+  </ion-list>    
+  
+  ```
+
+    带侧拉按钮的list
+
     ```
+      <ion-list no-lines>
+    <ion-list-header>
+      热门职位
+    </ion-list-header>
+    <ion-item-sliding *ngFor="let item of items">
+      <ion-item  (click)="itemSelected(item)">
+        <ion-avatar item-start>
+          <img src="{{item?.icon_url}}">
+        </ion-avatar>
+        <div item-start>
+          <ion-label>{{item?.post}}</ion-label>
+          <ion-note>{{item?.salary}}</ion-note>
+        </div>
+
+        <ion-note item-end>{{item?.address}}</ion-note>
+
+      </ion-item>
+
+      <ion-item-options side="right">
+        <button ion-button color="primary" (click)="deleteById(item)">
+          <ion-icon name="mail"></ion-icon>
+          DELETE
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+  
+    ```
+    
+    删除代码
+    
+    ```
+    deleteById(item) {
+
+    for (let i = 0; i < this.items.length; i++) {
+      if (item.postId === this.items[i].postId) {
+        this.items.splice(i, 1);
+      }
+    }
+
+  }
+    ```
+
 
