@@ -8,7 +8,7 @@
     float: left;
     width: 613px;
     height: 160px;
-    background-image: url('../images/bigpic1.JPG');
+    background-image: url('./../images/bigpic1.JPG');
 }
 .smallpic{
     float: left;
@@ -19,7 +19,7 @@
     width: 127px;
 }
 .smallpic .smallpic1{
-    background-image: url('../images/border.png');
+    background-image: url('./../images/border.png');
 }
 .smallpic>div>img{
     margin-top:3px;
