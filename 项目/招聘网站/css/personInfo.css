@@ -1,0 +1,288 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.mr_basicgb1{
+    width: 1366px;
+    height: 638px;
+    background-color: #7dc9ff;
+    background-image: url("../images/personInfo/mr_basicbg1.png");
+}
+.main{
+    width: 350px;
+    height: 520px;
+    background-color: white;
+    text-align: center;
+    position:relative;
+    top:100px;
+    left: 37%;
+}
+ .mr_basicgb1 img{
+     float: left;
+    position: relative;
+     top: -50px;
+     left: 37%;
+}
+ .head{
+     /*background-color: #7dc9ff;*/
+     font-size: 14px;
+     position: relative;
+     top:50px;
+ }
+ .head span{
+     margin-left: -90px;
+ }
+ .form_s{
+     margin-left: 55px;
+     margin-right: 55px;
+     /*background-color: #a1ff1b;*/
+     position: relative;
+     top: 70px;
+     /*height: 420px;*/
+     width: 240px;
+ }
+ .form_s input{
+     background-color: #f4f4f4;
+     color: darkgrey;
+     height: 45px;
+     border: none;
+     box-sizing: border-box;
+     padding-left: 10px;
+ }
+
+i{
+    position: relative;
+    /*right: 8px;*/
+    /*top: 78px;*/
+    border: 4px solid #fff;
+    border-color: #d3d3d3 transparent transparent;
+    display: block;
+    font-size: 0;
+    height: 0;
+    width: 0;
+}
+li{
+    font-size: 14px;
+    color: #333333;
+}
+
+ .form_s .name{
+     position: absolute;
+     width: 240px;
+     height:45px;
+     background-color: #ff5cb1;
+ }
+ .name input{
+     width: 240px;
+ }
+ .education{
+     width:240px;
+     /*background-color: #ff2432;*/
+     position: absolute;
+     top: 60px;
+     font-size: 12px;
+ }
+ .education input{
+     height: 40px;
+     width: 110px;
+     text-align: left;
+ }
+#education{
+    float: left;
+}
+#year{
+     float: right;
+    position: absolute;
+    top: 0px;
+    right: 0;
+ }
+ .ei{
+    position: relative;
+    left: 90px;
+     top:18px;
+}
+ .yi{
+     position: relative;
+     left: 220px;
+     top:12px;
+ }
+
+.education_edu{
+    float: left;
+    position: relative;
+    top:90px;
+    left: -43px;
+    width: 110px;
+    height: 100px;
+    background-color: #ff5cb1;
+    overflow-y: scroll;
+    display: none;
+}
+.education_year{
+    background-color: #7dc9ff;
+    float: right;
+    width: 110px;
+    height: 100px;
+    position: relative;
+    top:-10px;
+    overflow-y: scroll;
+    display: none;
+
+}
+.education_edu ul li{
+    list-style: none;
+    text-align: left;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.education_year ul li{
+    list-style: none;
+    text-align: left;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.ophone_num{
+    position: absolute;
+    top:120px;
+    height: 40px;
+    background-color: #ff5cb1;
+}
+.number{
+    width: 240px;
+}
+
+.email{
+    position: absolute;
+    top: 185px;
+    width: 240px;
+}
+.email input{
+    width: 240px;
+}
+
+.city{
+    position: absolute;
+    top:250px;
+    width: 240px;
+}
+.city input{
+    width: 240px;
+    text-align: left;
+}
+.city_i{
+    position: relative;
+    left: 220px;
+    top:-23px;
+}
+.city_contry{
+    float: left;
+    width: 80px;
+    height: 100px;
+    position: relative;
+    top:295px;
+    left: -43px;
+    background-color: #7dc9ff;
+    overflow-y: scroll;
+    display: none;
+}
+.city_contry ul li{
+    list-style: none;
+    text-align: left;
+    line-height: 30px;
+    padding-left: 15px;
+}
+.city_city{
+    float: right;
+    position: relative;
+    right: 0px;
+    top:195px;
+    width: 160px;
+    height: 100px;
+    background-color: #ff5cb1;
+    overflow-y: scroll;
+    display: none;
+}
+.city_city ul li{
+    list-style: none;
+    letter-spacing: 2px;
+}
+
+.next{
+    position: absolute;
+    top:335px;
+    width: 240px;
+    background-color: #00B38A;
+}
+.next .next_but{
+    background-color: #00B38A;
+    width: 240px;
+    height: 45px;
+    color: #FFFFFF;
+}
+
+.save{
+    position: absolute;
+    top:390px;
+    font-size: 12px;
+    color: #A9A9A9;
+    left: 25px;
+}
+
+
+.import{
+    display: none;
+}
+/*当文本框内容不符合要求时，提示文本的样式*/
+.import_name{
+    font-size: 13px;
+    color: #ff2432;
+    position:relative;
+    top:43px;
+    /*left: 10px;*/
+    text-align: left;
+    background-image: url("../images/personInfo/gantan.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+.import_ophone{
+    font-size: 13px;
+    color: #ff2432;
+    position: relative;
+    top:145px;
+    text-align: left;
+    background-image: url("../images/personInfo/gantan.png");
+    background-repeat: no-repeat;
+    display: block;
+
+}
+.import_email{
+    font-size: 13px;
+    color: #ff2432;
+    position: relative;
+    top:200px;
+    text-align: left;
+    background-image: url("../images/personInfo/gantan.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+.import_city{
+    font-size: 13px;
+    color: #ff2432;
+    position: relative;
+    top:300px;
+    text-align: left;
+    background-image: url("../images/personInfo/gantan.png");
+    background-repeat: no-repeat;
+    display: block;
+
+}
+
+
+
+
+
+
+
+
+

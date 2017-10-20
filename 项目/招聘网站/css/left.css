@@ -1,0 +1,145 @@
+.lg_left{
+    width: 230px;
+    height: 910px;
+    /*background-color: red;*/
+    /*margin-left: 0px;*/
+    background-color: #FAFAFA;
+   /* background-color: white;
+    margin-bottom: -20px;*/
+    position: absolute;
+    top: 115px;
+    left: 200px;
+
+}
+.lg_left .mainNavs{
+    width: 230px;
+    height: 850px;
+    background-color: #FAFAFA;
+
+}
+.lg_left .mainNavs .main_box{
+    width: 230px;
+    height: 180px;
+}
+.lg_left .mainNavs .main_box .menu_main{
+    width: 230px;
+    height: 170px;
+}
+.lg_left .mainNavs .main_box:hover .menu_sub{
+    display: block;
+    border: solid 2px #999999;
+    border-left: none;
+}
+.lg_left .mainNavs .main_box:hover{
+    /*border: solid 2px red;*/
+    border: solid 2px #999999;
+}
+.lg_left .menu_main a:hover{
+    color: #00b38a;
+}
+
+.lg_left .menu_main  h2 {
+    padding-top: 20px;
+    padding-left: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.lg_left .menu_main h2 i {
+    float: right;
+    width: 7px;
+    height: 14px;
+    margin-right: 8px;
+    margin-top: 4px;
+    background: url(//static.lagou.com/www/static/index/modules/sidebar/img/icon_arr_r_173bde8.png) 0 0 no-repeat;
+}
+.lg_left .menu_main a {
+    float: left;
+    margin-left: 10px;
+    margin-top: 0px;
+    padding: 0 8px;
+    white-space: nowrap;
+    color: #555;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.lg_left .menu_sub {
+    position: absolute;
+    left: 230px;
+    top: 0;
+    width: 540px;
+    padding: 15px 30px 5px;
+    z-index: 101;
+    border: 2px solid #c9cbce;
+    background: #fff;
+    display: none;
+    background-color: #FAFAFA;
+}
+/*.dn {
+    display: none;
+}*/
+.lg_left .menu_sub dt {
+    position: absolute;
+    width: 70px;
+    margin: 0;
+    font-size: 14px;
+    text-align: right;
+}
+.lg_left .menu_sub dt span {
+    padding: 0;
+    line-height: 28px;
+    color: #333;
+}
+.lg_left .menu_sub dd {
+    margin-left: 100px;
+    font-size: 0;
+    overflow: hidden;
+}
+.lg_left .menu_sub dd a {
+    margin-left: -1px;
+    padding: 0 12px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #777;
+    white-space: nowrap;
+    border-left: 1px solid #aaa;
+}
+a {
+    color: #555;
+    background-color: transparent;
+    text-decoration: none;
+}
+.lg_left .lg_left_buttom{
+    display: block;
+    margin-top: 12px;
+    padding-left: 22px;
+    font-size: 18px;
+    height: 46px;
+    line-height: 46px;
+    border-bottom: 2px solid #00b38a;
+    background: #fafafa;
+}
+.lg_left .lg_left_buttom a{
+    display: block;
+    clear: both;
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+.lg_left .lg_left_buttom i{
+    display: block;
+    float: right;
+    margin-right: 20px;
+    margin-top: 14px;
+    width: 21px;
+    height: 21px;
+    background: url(//static.lagou.com/www/static/index/modules/sidebar/img/icon_ring_arr_r_2871c6c.png) 0 0 no-repeat;
+}
+
+
+
+
+
+
+

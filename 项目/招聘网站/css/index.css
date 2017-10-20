@@ -1,0 +1,363 @@
+* {
+    outline: 0;
+}
+body {
+    line-height: 22px;
+}
+body {
+    line-height: 22px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Hiragino Sans GB","Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica;
+    color: #333;
+    word-wrap: break-word;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*.lg_header{
+    height: 30px;
+}
+.top{
+    width: 100%;
+    height: 30px;
+    background-color: #333;
+}
+.top ul{
+    margin: 0;
+    list-style: none;
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+
+}
+.top ul li
+{
+    float: left;
+    line-height: 30px;
+    box-sizing: border-box;
+    opacity: 0.7;
+}
+.top ul li:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.top1{
+    opacity: 1;
+    position: relative;
+    left: -24px;
+    top: 3px;
+}
+.top2{
+    position: relative;
+    left: -19px;
+    color:  #29B8A2;
+}
+.top3{
+    position: relative;
+    left: -10px;
+    padding-left: 10px;
+
+}
+.top4{
+    position: relative;
+    left: 1023px;
+
+}
+.top3{
+    border-left: 1px solid #5d5d5d;
+    height: 8px;
+
+
+}
+.top5{
+    position: relative;
+    left: 1035px;
+    border-left: 1px solid #5d5d5d;
+    padding-left: 16px;
+}*/
+.lg_header2{
+    min-width: 1024px;
+    height: 54px;
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fafafa;
+}
+.img1{
+    float: left;
+    width: 97px;
+    height: 34px;
+    margin: 10px 0 0;
+    padding: 0;
+    position: relative;
+    left: 200px;
+
+}
+.lg_header2-1{
+    float: left;
+    height: 44px;
+    padding-top: 10px;
+    padding-left: 12px;
+    font-size: 18px;
+    line-height: 44px;
+}
+ strong {
+     margin-left: 196px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 400;
+}
+em {
+    margin-left: 4px;
+    color: #999;
+    font-size: 12px;
+    font-style: normal;
+    cursor: pointer;
+}
+.lg_header2-2 ul {
+    list-style: none;
+    color: white;
+    margin-top: -13px;
+    margin-left: 440px;
+}
+.lg_header2-2 ul li {
+    float: left;
+    /*width: 10%;*/
+    line-height: 30px;
+    box-sizing: border-box;
+    opacity: 0.7;
+    /*color: #333;*/
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    line-height: 53px;
+    padding: 0 5px;
+}
+.lg_header2-2 ul li:hover{
+    border-bottom: solid 2px #00b38a;
+
+}
+.left1{
+    color:black;
+    border-bottom: 2px solid #00b38a;
+}
+.left2{
+    color: #999;
+    margin-left: 30px;
+}
+.left3{
+    color: #999;
+    margin-left: 30px;
+}
+.left4{
+    color: #999;
+    margin-left: 30px;
+}
+.lg_header2-2 ul li:hover{
+   color:black;
+    cursor: pointer;
+    border-bottom: 2px solid #00b38a;
+
+}
+.lg_body{
+    width: 1024px;
+    height: 1000px;
+    /*background-color: blue;*/
+    margin-top: 30px;
+   margin-left: 200px;
+    /*border:1px solid #ff0000;*/
+}
+
+ .lg_right{
+    width: 744px;
+    height: 2447px;
+    /*background-color: #5590ff;*/
+     /*margin-left: 500px;
+     margin-top: -2550px;*/
+     position: absolute;
+     left: 460px;
+     top: 115px;
+
+}
+.search_input-input{
+    width: 590px;
+    height: 31px;
+    line-height: 23px;
+    /*float: left;*/
+    font-size: 16px;
+    /*padding: 5px 8px 5px 10px;*/
+    border: 2px solid #00b38a;
+}
+.search_button-button {
+    height: 37px;
+    width: 150px;
+    color: #FFF;
+    font-size: 18px;
+    border: 2px solid #00b38a;
+    background: #00b38a;
+    float: right;
+    cursor: pointer;
+    /*margin-left: 400px;*/
+    /*margin-top: -953px;*/
+    margin-right: 0px;
+}
+.lg_hotSearch_top{
+    width:744px;
+    height: 22px;
+    margin-top: 8px;
+    /*background-color: #999999;*/
+}
+.lg_hotSearch_main{
+    width: 70px;
+    height: 22px;
+
+}
+.lg_hotSearch{
+    /*width: 75px;*/
+    height: 22px;
+    margin-top: -25px;
+    margin-left: 67px;
+    font-size: 14px;
+}
+
+.lg_hotSearch td{
+    text-align: center;
+    color: #00b38a;
+    padding-right: 15px;
+}
+
+.da-thumbs{
+    width: 744px;
+    height: 118px;
+    /*background-color: #808080;*/
+    position: absolute;
+    left: 460px;
+    top: 390px;
+    /*background-color: #00b38a;*/
+}
+.da-thumbs img{
+    width: 113px;
+    height: 113px;
+    border: solid 3px #FAFAFA;
+}
+.da-thumbs ul img:hover{
+    background-image: url("");
+}
+.da-thumbs ul{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-left: -10px;
+}
+.da-thumbs ul li{
+    width: 113px;
+    height: 113px;
+    float: left;
+    line-height: 118px;
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+    color: white;
+    text-align: center;
+    width: 16.65%;
+    margin:0 auto;
+    /*opacity: 0.7;*/
+    padding: 2px;
+    padding-left: 7px;
+    text-align: center;
+}
+.job{
+    width: 744px;
+    height: 39px;
+    position: absolute;
+    left: 459px;
+    top: 520px;
+    list-style: none;
+}
+.job_tab{
+    /*background-color: palegreen;*/
+    font-size: 0;
+    background: #f6f6f6;
+    margin-left:0px;
+}
+.job_tab li{
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 20px;
+    font-size: 18px;
+    /*color: #999;*/
+}
+.hot_job{
+    border-top: 3px solid #00b38a;
+    background: #fff;
+    color: #333;
+    margin-left: 0px;
+    /*padding-left: 20px;*/
+}
+.new_job{
+    color: #999;
+}
+.lg_body_pli_buttom{
+    margin-top: 250px;
+    margin-left: 490px;
+}
+.lg_body_pli_buttom td{
+    text-align: center;
+    /*width: 60px;*/
+    height: 10px;
+    padding: 10px;
+    /*border-right: solid 1px #999999;*/
+}
+.lg_body_pli_buttom tr{
+    height: 10px;
+    font-size: smaller;
+}
+.lg_body_pli_buttom table tr td:hover{
+    color: #00b38a;
+}
+
+/*////////////////////*/
+#go_top{
+    width: 28px;
+    height: 46px;
+    position: fixed;
+    left: 50%;
+    bottom: 146px;
+    margin-left: 548px;
+    cursor: pointer;
+    background-image: url("../images/goTop1.png");
+}
+.fankui{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 50%;
+    bottom: 80px;
+    margin-left: 538px;
+    cursor: pointer;
+    z-index: 21;
+}
+.fankui .fankui_1{
+    position: relative;
+    text-align: center;
+}
+.fankui .fankui_1 .fankui_img{
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+    background-image: url("../images/fankui.png");
+}
+.fankui .fankui_1 span{
+    font-size: 12px;
+    color: #555;
+}
+ #go_top:hover{
+ background-image: url("../images/goTop2.png");
+ }
+ .fankui_img:hover{
+     background-color: #00b38a;
+ }
+
+

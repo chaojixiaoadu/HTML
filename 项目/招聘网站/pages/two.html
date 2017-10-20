@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{margin: 0;
+          padding: 0;
+        }
+        #div-03{
+            width: 100%;
+            height:100%;
+            background-color: lightseagreen;
+            position: absolute;
+        }
+        #div-04{
+             width: 500px;
+             height: 400px;
+            background-color: white;
+            position: absolute;
+            left: 500px;
+            top: 150px;
+            text-align: center;
+
+        }
+        .xing {
+            position: relative;
+            top: 50px;
+
+        }
+.panban{
+    margin:auto;
+   position: relative;
+}
+        .gongsi{
+
+            position:absolute;
+           width: 400px;
+            height: 30px;
+            top: 100px;
+            left: 50px;
+           background-color: lightgrey;
+        }
+        .zhiwei{
+
+            position:absolute;
+            width: 400px;
+            height: 30px;
+            top: 160px;
+            left: 50px;
+            background-color: lightgrey;
+        }
+
+        #kaishi{
+            width: 200px;
+            height: 30px;
+            float: left;
+            position: absolute;
+}
+        .footer{width: 500px;
+            height: 80px;
+           background-color: lightgrey;
+            position: absolute;
+            top: 320px;
+        }
+        .zuobian{
+            top: 25px;
+            right: 200px;
+            position: relative;
+        }
+        .youbian{
+
+            left: 150px;
+            position: relative;
+
+        }
+        #gengda{width: 150px;
+                height: 35px;
+            background-color: blue;
+         }
+        #bbig{
+            width: 180px;
+            height: 30px; ;
+            position: relative;
+            top: 200px;
+            left: 40px;
+            background-color: lightgrey;
+}
+        #big{
+            width: 200px;
+            height: 30px;
+            position: relative;
+            top: 170px;
+            left: 250px;
+            background-color: lightgrey;}
+        .p{position: relative;
+
+        }
+        .p img{ border-radius:50% ;
+            position: absolute;
+            top: -120px;
+            right: 190px;
+        }
+       .p input[type='file']{
+           display: block;
+           width: 120px;
+           height: 120px;
+           position: absolute;
+            top: -120px;
+           right: 190px;
+           opacity: 0;
+           border-radius:50% ;
+       }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div id="div-03">
+        <div class="p">
+
+        </div>
+    </div>
+    <div id="div-04">
+
+        <hi class="xing">工作经历</hi>
+        <div class="paiban">
+        <input class="gongsi" type="text" value="公司名称"> <br>
+        <input class="zhiwei" type="text" value="您的职位">
+     <div id="kaishi">
+        <form action="#">
+            <select id="bbig" time="" id="">
+                <option value="a1">起始时间</option>
+                <option value="a2">2017</option>
+                <option value="a3">2016</option>
+                <option value="a4">2015</option>
+                <option value="a5">2014</option>
+                <option value="a6">2013</option>
+                <option value="a7">2012</option>
+                <option value="a8">2011</option>
+                <option value="a9">2010</option>
+                <option value="a10">2009</option>
+                <option value="a11">2007</option>
+                <option value="a12">2006</option>
+                <option value="a13">2005</option>
+                <option value="a14">2004</option>
+                <option value="a15">2003</option>
+            </select>
+
+            <select id="big" time="" id=" ">
+                <option value="a15">结束时间</option>
+                <option value="a16">2017</option>
+                <option value="a17">2016</option>
+                <option value="a18">2015</option>
+                <option value="a19">2014</option>
+                <option value="a20">2013</option>
+                <option value="a21">2012</option>
+                <option value="a22">2011</option>
+                <option value="a23">2010</option>
+                <option value="a24">2010</option>
+                <option value="a25">2010</option>
+                <option value="a26">2007</option>
+                <option value="a27">2006</option>
+                <option value="a28">2005</option>
+                <option value="a29">2004</option>
+                <option value="a30">2003</option>
+            </select>
+        </form>
+     </div>
+            <div class="footer">
+                <div class="zuobian"><button id="bianda" onclick="window.location.href='two.html'">上一页</button></div>
+                <div class="youbian"><button id="gengda" onclick="window.location.href='three.html'">教育经历</button></div>
+            </div>
+        </div>
+        <div class="p">
+            <img src="../images/default_headpic.png" height="120" width="120"/>
+            <img src="../images/mr_headhover.png" height="120" width="120"/>
+            <img src="../images/mr_head.png" height="120" width="120"/>
+            <input type="file">
+        </div>
+     </div>
+</div>
+</body>
+</html>

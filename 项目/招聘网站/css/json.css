@@ -1,0 +1,170 @@
+.lg_body_pli{
+    width: 744px;
+    height: auto;
+    /*position:relative;*/
+    overflow:hidden;
+    float:right;
+    top:550px;
+    left:460px;
+    position:absolute;
+    /*background-color: #999999;*/
+    /*position: relative;*/
+    /*left: -500px;*/
+    /*top: 500px;*/
+}
+ .lg_body_pli .lg_body_pli_top{
+    position: relative;
+    top: 0px;
+
+    width: 744px;
+    height: auto;
+}
+.fl{
+    float: left;
+    width: 320px;
+    height: 150px;
+
+}
+
+.lg_body_pli_top ul{
+    width: 740px;
+    height: auto;
+    /*margin-left: -40px;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    list-style: none;
+    margin: 5px;
+
+}
+.item_cont_list li {
+    width: 352px;
+    /*padding: 28px 32px;*/
+    height: 250px;
+    /*border: 1px solid #ededed;*/
+    /*margin-bottom: 20px;*/
+    border: solid 1px #d3d3d3;
+    position: relative;
+    list-style: none;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    margin: 8px;
+}
+.lg_body_pli_top .item_cont{
+    width: 300px;
+    height: 180px;
+
+    /*background-color: #00b38a;*/
+}
+.item_cont_left{
+    width: 150px ;
+    height: 150px;
+
+    float: left;
+    padding: 30px;
+    box-sizing: border-box;
+
+}
+.item_cont_right{
+    float: right;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    padding-top: 30px;
+    box-sizing: border-box;
+
+    /*background-color: red;*/
+}
+.item_cont_list h3{
+    width: 155px;
+    height: 30px;
+    font-weight:700;
+}
+.sub_title{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 14px 0 18px;
+    line-height: 18px;
+}
+.sub_title span{
+    color: #00b38a;
+}
+.item_cont .details{
+    width: 320px;
+    height: 30px;
+  /*position: relative;*/
+    /*top: -6px;*/
+    /*left: 10px;*/
+    margin-bottom: 0px;
+    /*margin-top: 0px;*/
+    padding-top: 10px;
+}
+
+
+
+.company_state{
+    width: 340px;
+    height: 40px;
+    /*background-color: #08d7a2;*/
+    font-size: 14px;
+    display: flex;
+    margin-left: 10px;
+    box-sizing: border-box;
+    padding-bottom: 0px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.company_state .web{
+
+    width: 110px;
+
+}
+.company_state .place{
+
+    width:80px;
+
+}
+.company_state .type{
+
+    width: 140px;
+
+
+}
+.company_state span i{
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 18px;
+
+    /*margin-right: 12px;*/
+    background-image: url(//static.lagou.com/www/static/company-list/modules/list/img/icon_95c53f1.png);
+    background-repeat: no-repeat;
+    /*background-position: 0 -18px;*/
+}
+
+
+
+
+.lg_cont_list h3{
+    width: 155px;
+    height: 30px;
+    font-weight:700;
+}
+.lg__cont_list li {
+    width: 352px;
+    /*padding: 28px 32px;*/
+    height: 250px;
+    /*border: 1px solid #ededed;*/
+    /*margin-bottom: 20px;*/
+    border: solid 1px #d3d3d3;
+    position: relative;
+    list-style: none;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    margin: 10px;
+    padding: 40px;
+}
+.lg_cont_list{
+    width: 744px;
+    height: auto;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css" >
+        *{margin: 0;
+            padding: 0;
+        }
+       #div-one{width: 100%;
+              height: 100%;
+           background-color: lightseagreen;
+           position: absolute;
+
+       }
+        #div-two {
+            width: 40%;
+            height: 50%;
+            background-color: white;
+            position: absolute;
+
+            text-align: center;
+            left: 500px;
+            top: 150px;
+            line-height: 100px;
+        }
+    #div-three{
+
+        position: absolute;
+        text-align: right;
+        top: 240px;
+        left: 590px;
+     }
+        #div-five {
+            width: 100%;
+            height: 80px;
+            background-color: lightgrey;
+
+            top: 300px;
+            position: absolute;
+        }
+.zuobian{
+    top: -10px;
+    right: 250px;
+    position: relative;
+
+}
+        .youbian{
+            top: -110px;
+            right:-200px;
+            position: relative;
+        }
+.gengda{
+      background-color: lightskyblue;
+    height: 30px;
+    width: 100px;
+}
+
+    </style>
+    <script type="text/javascript">
+
+
+
+
+            var total = 58;
+
+            function getUTFCodeNum(str) {
+                var reg = /[\u4E00-\u9FA5\uF900-\uFA2D]/gi;
+                var newStr = str.replace(reg, 'aa');
+                return newStr.length;
+
+            }
+
+            function showNum() {
+                if (document.getElementById("txt").value.length > 58) {
+                    document.getElementById('txt').value = document.getElementById('txt').value.sybstr(0, 58);
+                } else {
+                    var value = document.getElementById('txt').value;
+                    console.log(value);
+                    document.getElementById('remain').innerHTML =
+                        total - getUTFCodeNum(value);
+
+                }
+
+            }
+
+    </script>
+</head>
+<body>
+<div id="container">
+
+    <div id="div-one"></div>
+
+    <div id="div-two"><p>一句话介绍自己</p>
+        <div id="div-five">
+            <form action="#">
+            <div class="zuobian"><button onclick="window.location.href='three.html'">上一页</button></div>
+            <div class="youbian"><input class="gengda" type="submit" name="Submit" value=完成创建></div>
+                </form>
+                </div>
+
+        </div>
+<div id="div-three">
+      <form action="#">
+          <textarea name="txt" id="txt" cols="65"  rows="6"
+             onkeyup="showNum()" onkeypress="showNum()"
+                    onkeydown="showNum()" onchange="showNum()"></textarea>
+          <p id="zishu">还剩下<span id="remain">58</span>个文字</p>
+      </form>
+
+  </div>
+</div>
+
+</div>
+</body>
+</html>
