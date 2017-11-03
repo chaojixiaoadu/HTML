@@ -1,0 +1,91 @@
+<!--
+  Generated template for the CompanyInfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>公司信息</ion-title>
+    <button class="button1" (click)="back()"> <ion-icon name="arrow-back"style="font-size: 25px"></ion-icon></button>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content style="background-color:  #f2e8e5">
+  <div class="info">基本信息（必填）</div>
+  <div class="info_b">
+    <ion-icon ios="ios-person" md="md-person" style="font-size: 2em; margin-right: 10px"></ion-icon>
+    提交公司信息完成实名认证
+  </div>
+
+  <ion-row>
+    <ion-col col-12 style="padding: inherit">
+      <form class="form" [formGroup]="loginForm" (ngSubmit)="company(loginForm.value)" novalidate>
+
+        <ion-item>
+          <ion-label col-4>名称</ion-label>
+          <ion-input col-8 type="name"  placeholder="请输入公司名称"  [formControl]="companyName" clearInput=true>姓名</ion-input>
+        </ion-item>
+        <ion-label *ngIf="companyName.hasError('required') && companyName.touched" class="error-message">* 请输入用户名</ion-label>
+
+
+        <ion-item>
+          <ion-label col-4>雇主</ion-label>
+          <ion-input col-8 type="user"  placeholder="请输入雇主名称"  [formControl]="user" clearInput=true></ion-input>
+        </ion-item>
+
+        <div style="background-color:#f2e8e5">
+          <span style="line-height: 50px">
+            详细信息
+          </span>
+        </div>
+        <ion-item>
+          <ion-label col-4>公司地点</ion-label>
+          <ion-input col-8 type="place"  placeholder="请输入地点"  [formControl]="place" clearInput=true></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label col-4>公司简称</ion-label>
+          <ion-input col-8 type="weight"  placeholder="请输入简称"  [formControl]="nameE" clearInput=true></ion-input>
+        </ion-item>
+        <!--<ion-item>-->
+          <!--<ion-label col-4>详细地址</ion-label>-->
+          <!--<ion-input col-8 type="weight"  placeholder="请输入详细地址"  [formControl]="place" clearInput=true></ion-input>-->
+        <!--</ion-item>-->
+
+        <ion-item col-4 style="float: left">行业类型</ion-item>
+        <ion-item  col-8 style="float: left">
+        <ion-select  type="text" clearInput=true [formControl]="sex">
+        <ion-option value="1">IT互联网</ion-option>
+        <ion-option value="2">制造</ion-option>
+        <ion-option value="3">贸易物流</ion-option>
+        <ion-option value="4">建筑房地产</ion-option>
+        <ion-option value="5">金融</ion-option>
+        <ion-option value="6">服务业</ion-option>
+        <ion-option value="7">政府事业单位</ion-option>
+        <ion-option value="8">教育培训</ion-option>
+        <ion-option value="9">文化传媒</ion-option>
+        <ion-option value="10">企业服务</ion-option>
+        </ion-select>
+        </ion-item>
+
+        <div style="background-color:#f2e8e5">
+          <span style="line-height: 50px">
+            公司介绍
+          </span>
+        </div>
+        <ion-item>
+          <!--<ion-label col-4>邮箱</ion-label>-->
+          <ion-textarea col-8 type="text"  placeholder="请详细介绍公司"  [formControl]="company_info" clearInput=true></ion-textarea>
+        </ion-item>
+
+        <button  class="btn" ion-button type="submit">提交</button>
+
+      </form>
+    </ion-col>
+  </ion-row>
+
+
+</ion-content>

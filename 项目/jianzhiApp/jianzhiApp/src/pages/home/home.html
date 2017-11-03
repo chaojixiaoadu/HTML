@@ -1,0 +1,185 @@
+<ion-header style="background-color: #f2e8e5">
+  <ion-navbar>
+    <!--<ion-title>猫猫兼职</ion-title>-->
+    <ion-grid>
+      <ion-row>
+        <ion-col col-4>苏州<ion-icon name="arrow-down"></ion-icon></ion-col>
+        <ion-col col-4 style="text-align: center;font-size:18px;font-weight: 600">金锋兼职</ion-col>
+        <ion-col col-4 style="text-align: right" >
+          <!--<ion-searchbar-->
+            <!--[(ngModel)]="myInput"-->
+            <!--[showCancelButton]="shouldShowCancel"-->
+            <!--(ionInput)="onInput($event)"-->
+            <!--(ionCancel)="onCancel($event)">-->
+
+          <!--</ion-searchbar>-->
+        </ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+    <ion-slides autoplay="2000" loop="true"(ionSlideDidChange)="slideChanged()" #myslides>
+      <ion-slide *ngFor="let item of imgs">
+        <img src="/assets/img/{{item?.img}}" alt="" (click)="showImg(item?.links)">
+
+      </ion-slide>
+
+    </ion-slides>
+
+  </ion-navbar>
+
+
+
+</ion-header>
+
+<ion-content   style="background-color: #f2e8e5">
+  <!--<button  class="btncss" ion-button color="danger" (click)="back()">back</button>-->
+  <!--上拉刷新-->
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="下拉刷新"
+      refreshingSpinner="circles"
+      refreshingText="正在努力加载中...">
+    </ion-refresher-content>
+  </ion-refresher>
+
+
+  <ion-list no-lines>
+    <ion-item style="width: 100%;background-color: white;margin: 0;padding: 0;">
+    <ion-item class="div-a">
+      <ul>
+        <li><img (click)="itemSelected7()" src="../../assets/img/nav_cpy.png" alt=""></li>
+        <li><img (click)="itemSelected8()" src="../../assets/img/nav_danbao.png" alt=""></li>
+        <li><img (click)="itemSelected9()" src="../../assets/img/nav_location.png" alt=""></li>
+        <li><img (click)="itemSelected10()" src="../../assets/img/nav_total.png" alt=""></li>
+      </ul>
+    </ion-item>
+    <ion-item class="div-b">
+      <ul>
+        <li style="margin-left: 0px"><img src="" alt="">趣味兼职</li>
+        <li> 学生兼职</li>
+        <li> 特色兼职</li>
+        <li> 其他兼职</li>
+      </ul>
+    </ion-item>
+    </ion-item>
+    <!--/////////////-->
+    <ion-item class="div-d">
+      <ul>
+        <li><img class="img-a" (click)="itemSelected7()" src="../../assets/img/22,3c239b5d4ccb6d.jpg" alt=""></li>
+        <li><img class="img-b" (click)="itemSelected10()" src="../../assets/img/24,3f79fa840ea535.jpg" alt=""></li>
+        <!--<li><img (click)="itemSelected9()" src="../../assets/img/nav_location.png" alt=""></li>-->
+        <!--<li><img (click)="itemSelected10()" src="../../assets/img/nav_total.png" alt=""></li>-->
+      </ul>
+    </ion-item>
+
+
+    <!--/////////////////-->
+    <ion-list-header id="header">
+      <span  class="header-a">为你优选</span>
+      <!--<ion-item class="div-c">-->
+        <a href="" style="color: #2d2d2d;text-decoration: none" class="a-a">更多 <ion-icon name="arrow-forward"></ion-icon></a>
+      <!--</ion-item>-->
+    </ion-list-header>
+   </ion-list>
+
+  <!--///////////////////////-->
+  <div class="div-aa" style="background-color: white">
+  <ion-list  style="margin-top: -30px;width:30%;margin-left: 2%;margin-right: 2%">
+    <ion-item style="border: none">
+      <ion-label style="font-size: 0.8em;margin-left: 10px" >地区</ion-label>
+      <ion-select [(ngModel)]="gaming1" (ionChange)="place1(gaming1)">
+        <ion-option value="苏州">苏州</ion-option>
+        <ion-option value="常熟">常熟</ion-option>
+        <ion-option value="吴江">吴江</ion-option>
+        <ion-option value="园区">园区</ion-option>
+        <ion-option value="新区">新区</ion-option>
+        <ion-option value="平江">平江</ion-option>
+        <ion-option value="相城">相城</ion-option>
+        <ion-option value="吴中">吴中</ion-option>
+        <ion-option value="昆山">昆山</ion-option>
+        <ion-option value="太仓">太仓</ion-option>
+        <ion-option value="常熟">常熟</ion-option>
+        <ion-option value="张家港">张家港</ion-option>
+        <ion-option value="金阊">金阊</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item style="margin-top: -43px;margin-left: 110%">
+      <ion-label style="font-size: 0.8em">类型</ion-label>
+      <ion-select [(ngModel)]="gaming2"(ionChange)="place2(gaming2)">
+        <ion-option value="传单派发">传单派发</ion-option>
+        <ion-option value="潮兼职">潮兼职</ion-option>
+        <ion-option value="服务员">服务员</ion-option>
+        <ion-option value="打包分拣">打包分拣</ion-option>
+        <ion-option value="礼仪模特">礼仪模特</ion-option>
+        <ion-option value="充场">充场</ion-option>
+        <ion-option value="送餐员">送餐员</ion-option>
+        <ion-option value="话务客服">话务客服</ion-option>
+        <ion-option value="餐饮工">餐饮工</ion-option>
+        <ion-option value="校园代理">校园代理</ion-option>
+        <ion-option value="安保">安保</ion-option>
+        <ion-option value="司机代驾">司机代驾</ion-option>
+
+      </ion-select>
+    </ion-item>
+    <ion-item style="float: left;margin-top: -45px;margin-left: 210%;border-bottom: none !important;">
+      <ion-label style="font-size: 0.8em">筛选</ion-label>
+      <ion-select [(ngModel)]="gaming3" (ionChange)="place3(gaming3)">
+        <ion-option value="不限">不限</ion-option>
+        <ion-option value="日结">日结</ion-option>
+        <ion-option value="月结">月结</ion-option>
+        <ion-option value="次日结">次日结</ion-option>
+        <ion-option value="周结">周结</ion-option>
+        <ion-option value="完结工">完结工</ion-option>
+        <ion-option value="按件结">按件结</ion-option>
+        <ion-option value="小时结">小时结</ion-option>
+        <ion-option value="半月结">半月结</ion-option>
+
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  </div>
+
+  <ion-item class="jw-c-a" (click)="itemSelected(item)"
+            style="height: 130px;border-top: solid 1px #d0d0d0"*ngFor="let item of arr">
+    <ion-item class="jw-c-left" id="content">
+      <ion-item class="jw--c-left-top">
+        <h3>{{item?.jobname}}</h3>
+      </ion-item>
+      <ion-item class="jw-c-left-buttom"style="margin-top: -10px">
+        <ul class="jw-ul-a" style="margin-top: -3px">
+
+          <li><span style="margin-left: -29%;margin-top: -20%;font-size: 15px">工作时间:</span><a href="#" style="font-size: 15px">{{item?.duration}}</a> </li>
+          <li><span style="margin-left: -29%;padding-top: 3px;font-size: 15px">工作地点:</span><a href="#" style="font-size: 15px">{{item?.workplace}}</a> </li>
+          <li><span style="font-size: 15px;margin-left: -29%;padding-top: 3px;color: red;"></span><a href="" style="font-size: 15px">{{item?.mode}}/{{item?.position}}</a></li>
+        </ul>
+      </ion-item>
+    </ion-item>
+    <ion-item class="jw-c-right" style="margin-top: -110px;margin-right: -20px;border-bottom: white">
+      <span style="margin-top: -100px;color: red;padding-top: -100px;font-size: 15px">{{item?.salary}}元/天</span>
+      <br>
+      <br>
+
+      <span style="background-color:pink;padding: 2px;border: none;margin-left: 8%">&nbsp;&nbsp;&nbsp;人气&nbsp;&nbsp;&nbsp;</span>
+
+
+
+    </ion-item>
+  </ion-item>
+
+
+
+
+
+    <!--</ion-item>-->
+  <!--</ion-item>-->
+
+  <!--下拉加载-->
+  <!--<ion-infinite-scroll (ionInfinite)="$event.waitFor(doInfinite($event))">-->
+    <!--<ion-infinite-scroll-content-->
+      <!--loadingSpinner="bubbles"-->
+      <!--loadingText="Loading more data...">></ion-infinite-scroll-content>-->
+  <!--</ion-infinite-scroll>-->
+
+</ion-content>

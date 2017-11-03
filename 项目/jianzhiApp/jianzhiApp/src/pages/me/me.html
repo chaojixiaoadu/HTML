@@ -1,0 +1,42 @@
+<!--
+  Generated template for the MePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header style="height: auto">
+  <div class="title">
+    <div class="title_img"><img src="../../assets/img/5.jpg" alt="">
+      <!--<span (click)="to_login()">登录/注册</span>-->
+      <span id="span1" (click)="to_login()"*ngIf="showNavs">登录/注册</span>
+      <span id="span2" *ngIf="!showNavs">{{userName}}</span>
+
+    </div>
+  </div>
+</ion-header>
+
+
+<ion-content  style="background-color: #f2e8e5">
+  <ion-list style="margin-top: 20px">
+    <button ion-item  (click)="to_userPosition()" style="border-top: none"><img src="../../assets/img/217.png"style="width: 1.6em;margin-right: 10px" alt="">我的兼职</button>
+    <button ion-item (click)="to_userResume()"><img src="../../assets/img/216.png"style="width: 1.6em;margin-right: 10px" alt="">我的简历</button>
+    <button ion-item (click)="to_userAddPosition()" style="margin-top: 20px"><img src="../../assets/img/215.png"style="width: 1.6em;margin-right: 10px" alt="">我要招人</button>
+    <button ion-item (click)="to_company()"><img src="../../assets/img/214.png"style="width: 1.6em;margin-right: 10px" alt="">公司信息</button>
+    <button ion-item (click)="to_company_check()"><img src="../../assets/img/213.png"style="width: 1.6em;margin-right: 10px" alt="">职位管理</button>
+    <button ion-item ><img src="../../assets/img/212.png"style="width: 1.6em;margin-right: 10px" alt="">联系客服&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;0370-2937677</button>
+
+
+    <button ion-item (click)="to_login_out()"><img src="../../assets/img/211.png"style="width: 1.6em;margin-right: 10px" alt="">设置</button>
+  </ion-list>
+  <!--<ion-list>-->
+    <!--<button ion-item  (click)="itemSelected(item)">我的简历</button>-->
+  <!--</ion-list>-->
+  <!--<ion-list>-->
+    <!--<button ion-item  (click)="itemSelected(item)">我要招人</button>-->
+  <!--</ion-list>-->
+  <!--<ion-list>-->
+    <!--<button ion-item  (click)="itemSelected(item)">联系客服</button>-->
+  <!--</ion-list>-->
+</ion-content>

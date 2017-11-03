@@ -1,0 +1,31 @@
+page-user-position {
+  .title{
+    background-color: white;
+    border-bottom: 0.5px solid #e6e6e6;
+    line-height: 70px;
+  }
+  .card{
+    margin-bottom: 10px;
+  }
+  button{
+    background-color: #ffa100;
+    width: 100px;
+    height: 30px;
+    float: right;
+    position: absolute;
+    right: 30px;
+    top: 70px;
+  }
+  i{
+    color: red;
+    font-size: 1.2em;
+    margin-right: 5px;
+  }
+  .button1{
+    background-color: #F8F8F8;
+    width: 60px;
+    height: 40px;
+    display: block;
+  }
+
+}

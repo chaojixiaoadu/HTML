@@ -1,0 +1,89 @@
+<ion-header style="background-color: white">
+  <ion-navbar>
+    <ion-title>
+      消息
+    </ion-title>
+
+  </ion-navbar>
+  <div style="width: 100%;background-color: white;margin-top: 0px;">
+  <div class="div-c">
+    <img (click)="itemSelected5()"src="../../assets/img/sprite_index3.png" alt=""  >
+<br>
+    工作邀约
+  </div>
+  <div class="din-d">
+    <img (click)="itemSelected6()"src="../../assets/img/sprite_index3.png" alt="" style="width: 60px;height: 50px">
+    基本信息
+  </div>
+  </div>
+  <!--<ion-slides autoplay="2000" loop="true"(ionSlideDidChange)="slideChanged()" #myslides style="margin-top: 10px">-->
+    <!--<ion-slide *ngFor="let item of imgs" style="height: 50px;">-->
+      <!--<img src="/assets/img/{{item?.img}}" alt="" (click)="showImg(item?.links)">-->
+
+    <!--</ion-slide>-->
+
+  <!--</ion-slides>-->
+
+</ion-header>
+
+<ion-content style="background-color: white">
+  <div style="background-color: white">
+    <hr style="background-color: #f3f3f3;height: 10px">
+
+    <ion-list-header style="margin-top: 10px; ">
+    <span  class="header-aa">新手指南</span>
+    <!--<ion-item class="div-c">-->
+    <a href="" style="color: #2d2d2d;text-decoration: none;margin-right: 10px" class="a-aa">更多 <ion-icon name="arrow-forward"></ion-icon></a>
+    <!--</ion-item>-->
+  </ion-list-header>
+    <div class="div-e">
+      <img (click)="itemSelected16()"src="../../assets/img/29,4db7d908e3d35e.png" alt=""  >
+      <!--<br>-->
+      <!--为你优选-->
+    </div>
+
+    <!--<div style="margin-top: 20px;text-align: center">-->
+      <!--掌握方法，轻松找兼职-->
+
+    <!--</div>-->
+
+    <div class="div-body-a">
+    <ul>
+      <li>
+        <img (click)="itemSelected1()" src="../../assets/img/48,69699966c34d93_315-176c_8-0.jpg" alt=""style="width: 200px;height: 100px">
+        <br> <span style="font-size: 15px;font-weight: 600">轻松兼职从此开始</span><br>
+
+        <span style="font-size: 13px;color: #4c4c4c">找工作，当然有方法</span>
+
+      </li>
+      <li>
+         <img (click)="itemSelected2()"src="../../assets/img/45,696a54c4e87737_315-176c_8-0.jpg" alt=""style="width: 200px;height: 100px">
+
+        <br><span style="font-size: 15px;font-weight: 600">玩转金蜂，精彩兼职</span><br>
+
+        <span style="font-size: 13px;color: #4c4c4c">这些操作必须会</span>
+
+      </li>
+
+    </ul>
+ </div>
+    <div class="div-body-a">
+      <ul>
+        <li>
+           <img (click)="itemSelected3()"src="../../assets/img/43,579c499fceef43_315-176c_8-0.jpeg" alt=""style="width: 200px;height: 100px">
+
+          <br><span style="font-size: 15px;font-weight: 600">找工作如何不被骗</span><br>
+          <span style="font-size: 13px;color: #4c4c4c">记住这几个简单的原则</span>
+
+        </li>
+        <li>
+          <img (click)="itemSelected4()"src="../../assets/img/34,696a058874b0fd_315-176c_8-0.jpg" alt=""style="width: 200px;height: 100px">
+
+          <br><span style="font-size: 15px;font-weight: 600">不想出门怎么办</span><br>
+          <span style="font-size: 13px;color: #4c4c4c">在家领任务，轻松赚钱</span>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,79 @@
+page-company-info {
+  .title_img img{
+    width:75px;
+    height:75px;
+    line-height: 0;		/* remove line-height */
+    display: inline-block;	/* circle wraps image */
+    border-radius: 50%;	/* relative value */
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    transition: linear 0.25s;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+  }
+  .title_img span{
+    float: right;
+    margin-top: 50px;
+    margin-right: 230px;
+    font-size: 1.2em;
+  }
+  .title_img ion-icon{
+    float: left;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 50px;
+    font-size: 2em;
+    color: #6b6b6b;
+
+  }
+
+  .info{
+    line-height: 20px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom:15px;
+    font-size: 1.3em;
+  }
+  .info_b{
+    background: -webkit-linear-gradient(left, rgba(209, 220, 106, 0.65), #f19c0c); ;
+    background: -o-linear-gradient(right, rgba(209, 220, 106, 0.65), #f19c0c); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, rgba(209, 220, 106, 0.65), #f19c0c); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right,rgba(209, 220, 106, 0.65), #f19c0c); /* 标准的语法 */
+    line-height: 50px;
+    color: white;
+    font-size: 1.2em;
+    text-align: center;;
+  }
+  .form{
+    background-color: white;
+    overflow: hidden;
+  }
+  .form span{
+    margin-left: 20px;
+    font-size: 1.3em;
+    line-height: 52.5px;
+  }
+  .form ion-input{
+    width: 50%;
+    margin-right: 20px;
+  }
+  .btn{
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #f7ad64;
+    width: 300px;
+    text-align: center;
+    padding-right: 63px;
+  }
+  .button1{
+    background-color: #F8F8F8;
+    width: 60px;
+    height: 40px;
+    display: block;
+  }
+  .error-message{
+    color: red;
+  }
+}
