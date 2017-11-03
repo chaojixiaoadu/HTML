@@ -1,0 +1,283 @@
+nav{
+  height: 80px;
+  line-height: 80px;
+  font-size: 18px;
+}
+.leftlogo{
+  margin-left: 30px
+}
+li{
+  margin-top: 20px;
+}
+.fontsi{
+  font-size: 25px;
+  color: #102a3b;
+}
+.navbar-nav>li>a:hover{
+  background-color: rgba(76, 76, 76, 0.43);
+}
+.li-a:hover{
+  background-color: yellow;
+}
+.ul-a li a:hover{
+  background-color: rgba(76, 76, 76, 0.43);
+}
+a {
+  text-decoration: none;
+}
+.div-b{
+  width: 100%;
+  background-color: #303030;
+   color: #d0d0d0;
+  text-align: center
+}
+.div-b span{
+  color: yellow;
+}
+/*///////////////////////*/
+.ipt{
+  text-align: center;
+  margin-top: 20px;
+}
+input{
+  width: 350px;
+  padding: 6px 0 6px 45px;
+  height: 30px;
+  font: 12px/20px '宋体';
+  border: 0 none;
+  background: url(http://img1.lotour.com/2016/index/srhico.png) no-repeat 16px 7px #c7c7c9;
+  color: #fff;
+  border-radius: 3px;
+}
+.hot-word a,p{
+  margin-top: 10px;
+  color: #bdbdbd;
+  line-height: 30px;
+}
+/*///////////////////////*/
+.body-div-a{
+margin-left: 3%;
+}
+.body-div-a h3{
+  text-align: center;
+  color: #676B6E;
+}
+.body-div-a p{
+  text-align: center;
+  color: #676B6E;
+}
+.body-div-a ul{
+  text-align: center;
+}
+.body-div-a ul li{
+  float: left;
+  padding: 4px;
+  list-style: none;
+  margin-top: 6px;
+}
+/*/////////////////////////*/
+/*动画1*/
+.body-div-a ul li img{
+  cursor: pointer;
+  transition: all 0.6s;
+}
+.body-div-a ul li img:hover{
+  transform: scale(1.2);
+}
+/*//////////////////////*/
+.em-a{
+  width: 600px;
+  height: 195px;
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  display: block;
+  /* background: url(http://img1.lotour.com/2016/index/lstbg.png) repeat 0 -100px; */
+  font: 20px/30px 微软雅黑;
+  text-align: center;
+  color: #FFF;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+  z-index: 2;
+}
+.span-a {
+  padding-top: 90px;
+  display: block;
+  color: white;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+
+.em-b{
+  position: absolute;
+  margin-top: 90px;
+  margin-left: 4.5%;
+  color: white;
+  font: 20px/30px 微软雅黑;
+  display: block;
+  text-align: center;
+}
+.em-c{
+  position: absolute;
+  margin-top: 120px;
+  margin-left: 5%;
+  color: white;
+  font: 20px/30px 微软雅黑;
+  display: block;
+  text-align: center;
+}
+.em-d{
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 4.5%;
+  color: white;
+  font: 20px/30px 微软雅黑;
+  display: block;
+  text-align: center;
+}
+.em-e{
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 40%;
+  color: white;
+  font: 20px/30px 微软雅黑;
+  display: block;
+  text-align: center;
+}
+.span-e{
+  font-size: 30px;
+}
+
+/*////////////////////////*/
+.body-div-a ul li p{
+  color: #676b6e;
+}
+.touxiang li img{
+  width: 30px;
+  height: 30px;
+  border-radius:20px;
+  padding: 0px;
+  margin: 0px;
+}
+.body-div-b h3{
+  text-align: center;
+  color: #676B6E;
+}
+.body-div-b p{
+   text-align: center;
+   color: #676B6E;
+ }
+.body-div-b ul li{
+  list-style: none;
+  float: left;
+  padding: 20px;
+}
+.body-div-b ul{
+  margin-top: -10px;
+}
+.body-div-b{
+  margin-left: 2%;
+}
+.body-div-c h4{
+  text-align: center;
+  color: #676B6E;
+}
+.body-div-c p{
+  text-align: center;
+  color: #676B6E;
+}
+.body-div-c ul li{
+  list-style: none;
+  float: left;
+  padding: 20px;
+}
+.body-div-c ul{
+  margin-top: -10px;
+}
+.body-div-c{
+  margin-left: 2%;
+}
+/*////////////////////*/
+.body-div-d h3{
+  text-align: center;
+  color: #676B6E;
+}
+.body-div-d p{
+  text-align: center;
+  color: #676B6E;
+}
+/*//////////*/
+
+.img-aa {
+  width: 60px;
+  height: 60px;
+  border-radius:30px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 10px;
+}
+.span-b{
+  margin-top: 10px;
+}
+.span-cc{
+  margin-top: 10px;
+  border: 2px solid white;
+  width: 260px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  margin-left: 30px;
+  border-radius:5px;
+}
+
+.ltFeedback{
+  display: block;
+  width: 25px;
+  height: 98px;
+  position: fixed;
+  right: 0px;
+  margin-left: 500px;
+  top: 20%;
+  text-decoration: none;
+  background: url(./../../assets/img/ltFeedback-hover.png) no-repeat 0 0;
+  z-index: 1000000;
+}
+/*.xianshi{*/
+  /*display: none;*/
+/*}*/
+/*
+.ltFeedback:hover .xianshi{
+display: block;
+}
+*/
+/*////////////////////////*/
+textarea {
+  -webkit-appearance: textarea;
+  background-color: white;
+  -webkit-rtl-ordering: logical;
+  user-select: text;
+  flex-direction: column;
+  cursor: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border-width: 1px;
+  border-style: solid;
+  border-color: initial;
+  border-image: initial;
+  padding: 2px;
+}
+user agent stylesheet
+input, textarea, select, button {
+  text-rendering: auto;
+  color: #999999;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em;
+  font: 13.3333px Arial;
+}
