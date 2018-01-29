@@ -1,0 +1,40 @@
+平时总结
+
+1.禁止换行	white-space:nowrap;
+
+2.手机端设置position：fixe		需要设置top:0;
+
+3.加上之后再地址栏会多个#例如：
+网上说如果去掉好像要用代理
+http://blog.csdn.net/lxhjh/article/details/50614393
+通过设置$locationProvider.html5Mode(true)就行了。
+book.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+
+   //..省略代码
+    $locationProvider.html5Mode(true);
+}]);
+http://blog.csdn.net/blog_bc/article/details/78111774
+
+4.提交：View-Source:Http://172.0.0.0/index.htm就可以看到该页的源代码了。
+
+5.阻止事件冒泡：stopPropagation         
+阻止浏览器默认事件：preventDefault
+
+6.在vue.js中computed 对象内的方法如果在初始化时绑定到元素上的事件会先执行一次这个方法 ，而 methods 内的方法则不会；例如以下实例初始化时会自动执行一遍 name1 和 greet 这两个方法：
+var app = new Vue({
+    el: '#app',
+    data: {
+        name: 'Vue.js'
+    },
+    // 在 `methods` 对象中定义方法
+    computed: { 
+        name1: function(){  alert('222') },
+        greet: function (event) {
+            // `this` 在方法里指当前 Vue 实例
+            alert('Hello ' + this.name + '!')
+            // `event` 是原生 DOM 事件
+            if (event) {
+                alert(event.target.tagName)
+            }
+        }
+    }})// 也可以用 JavaScript 直接调用方法
