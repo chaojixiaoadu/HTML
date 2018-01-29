@@ -1,4 +1,4 @@
-### mongoDB
+### MongoDB
 
 1. 安装
 
