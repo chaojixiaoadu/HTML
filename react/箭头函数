@@ -1,0 +1,53 @@
+react箭头函数：
+
+1：写法一
+getAll.map( ( list,index ) => {
+return  ( <span  key={ index } >   {list.name}  </span>)
+})
+2：写法二
+get.map( ( list,index ) => (
+      
+)
+
+react箭头函数实现简单的按钮点击事件：
+ 
+class Button extends React.Componment {
+         render ( ) {
+             return (
+    		<button
+ 			onClik = { ( ) => this.setState ( { backgroundColor: " red"} )}
+ 			style = {this.state}
+                        Set background to red
+               </button>
+  
+)
+}      
+}
+
+render( <Button />, document.getElementById ( "root"));
+
+//////////////////////////////////////////////////
+ import PropChangeCounter from "react-armory-prop-change-counter";
+
+class App extends React.Component {
+  	constructor( props);
+ this.state = { email: "" };
+}
+render( ) {
+return (
+  <div>
+      <input
+  	  placeholder = "Email"
+   value = {this.state.email}
+   onChange = {e => this.setStates ({ email: e.target.value })}
+/>
+<PropChangeCounter
+    constant = {"this doesn't change"}
+    value = {this.state.email }
+    onChange= {e => this.setState({ email: e.target.value })}
+/>
+    <div>
+);
+}
+}
+     render(<App />,document.getElementById("root"));
